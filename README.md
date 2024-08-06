@@ -156,6 +156,5 @@ No known bugs at this time.
 ## Authors
 Ahmed Rady - [Github](https://github.com/AhmedRady66) / [Twitter](https://twitter.com/AboRady662)  
 
-Second part of Airbnb: Joann Vuong
 ## License
 Public Domain. No copy write protection. 
