@@ -49,7 +49,7 @@ def create_city(state_id):
         abort(400, "Not a JSON")
     if 'name' not in request.get_json():
         abort(400, "Missing name")
-    
+
     data = request.get_json()
     data['state_id'] = state_id  # Ensure city is linked to the correct state
     city = City(**data)
@@ -65,7 +65,7 @@ def update_city(city_id):
         abort(404)
     if not request.get_json():
         abort(400, "Not a JSON")
-    
+
     data = request.get_json()
     ignore_keys = ['id', 'state_id', 'created_at', 'updated_at']
     for key, value in data.items():
