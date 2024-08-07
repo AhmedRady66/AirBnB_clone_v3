@@ -14,6 +14,7 @@ def close_db(error):
     """ Close Storage """
     storage.close()
 
+
 @app.errorhandler(404)
 def not_found(error):
     """ 404 Error
