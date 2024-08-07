@@ -70,4 +70,4 @@ def update_state(state_id):
         state.save()
         return make_response(jsonify(state.to_dict(), 200))
     else:
-        return abort(404)
+        abort(404)
